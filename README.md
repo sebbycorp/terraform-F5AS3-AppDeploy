@@ -14,7 +14,7 @@ The following module provides an easy way to deploy F5 AS3 Configurations.
 ```
 module "app1" {
   source  = "sebbycorp/AppDeploy/F5AS3"
-  version              = "1.0.2"
+  version              = "1.0.3"
   tenant               = "tf-as3-test"
   as3tmpl              = "http"
   common_name          = "appname or fqdn"
@@ -24,5 +24,5 @@ module "app1" {
   load_balancing_mode  = "least-connections-member"
   pool_members         = ["10.11.5.1", "10.11.5.2", "10.11.5.3"]
 }
-
+```
 
