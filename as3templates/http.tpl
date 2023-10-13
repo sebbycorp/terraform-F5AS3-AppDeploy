@@ -18,7 +18,7 @@
                "virtualAddresses": [
                   "${VIP_ADDRESS}"
                ],
-               "pool": "${POOL_NAME}",
+               "pool": "${POOL_NAME}"
             },
             "${POOL_NAME}": {
                "class": "Pool",
@@ -26,11 +26,13 @@
                "monitors": [
                   "${MONITOR}"
                ],
-            "members": [{
-               "servicePort": ${POOLMEMBERS_PORT},
-               "shareNodes": true,
-               "serverAddresses": ${MY_POOLMEMBERS}
-            }]
+               "members": [{
+                  "servicePort": ${POOLMEMBERS_PORT},
+                  "shareNodes": true,
+                  "serverAddresses": [
+                     ${MY_POOLMEMBERS}
+                  ]
+               }]
             }
          }
       }
