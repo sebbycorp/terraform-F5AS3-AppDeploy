@@ -14,18 +14,18 @@ locals {
     DESCRIPTION       = var.common_name
     POOL_NAME         = "${var.common_name}_pool"
     MY_POOLMEMBERS    = jsonencode(var.pool_members)
-    SSL_PROFILE       = "${var.common_name}_ssl"
-    TLS_CERT          = "${var.common_name}_cert"
+#    SSL_PROFILE       = "${var.common_name}_ssl"
+#    TLS_CERT          = "${var.common_name}_cert"
     POOLMEMBERS_PORT  = var.pool_members_port
     MONITOR           = var.monitor
     LOADBALANCEMODE   = var.load_balancing_mode
-    TCP_PROFILE       = "${var.common_name}_tcp"
-    HTTP_PROFILE      = "${var.common_name}_http"
-    PERSISTENCE       = "${var.common_name}_persistence"
-    PERSISTENCEMETHOD = var.persistence_method
-    CERT              = jsonencode(vault_pki_secret_backend_cert.app.certificate)
-    KEY               = jsonencode(vault_pki_secret_backend_cert.app.private_key)
-    CA_CHAIN          = jsonencode(vault_pki_secret_backend_cert.app.ca_chain)
+ #   TCP_PROFILE       = "${var.common_name}_tcp"
+ #   HTTP_PROFILE      = "${var.common_name}_http"
+ #   PERSISTENCE       = "${var.common_name}_persistence"
+ #   PERSISTENCEMETHOD = var.persistence_method
+#   CERT              = jsonencode(vault_pki_secret_backend_cert.app.certificate)
+ #    KEY               = jsonencode(vault_pki_secret_backend_cert.app.private_key)
+ #   CA_CHAIN          = jsonencode(vault_pki_secret_backend_cert.app.ca_chain)
   })
 }
 
