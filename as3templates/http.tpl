@@ -29,10 +29,7 @@
                "members": [{
                   "servicePort": ${POOLMEMBERS_PORT},
                   "shareNodes": true,
-                  "serverAddresses": [
-                      "192.0.1.1",
-                      "192.0.1.2"
-                   ]
+                  "serverAddresses": ${MY_POOLMEMBERS}
               }]
             }
          }

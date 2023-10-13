@@ -10,8 +10,3 @@ module "app" {
   pool_members      = ["10.11.5.1", "10.11.5.2", "10.11.5.3"]
 }
 
-
-
-# resource "bigip_as3" "app5_services" {
-#   as3_json = file{"as3.json")
-#  }
