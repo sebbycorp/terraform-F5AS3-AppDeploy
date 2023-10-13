@@ -1,5 +1,5 @@
 module "app" {
-  source  = "/Users/sebbycorp/Library/CloudStorage/GoogleDrive-sebastian@maniak.io/My Drive/Projects/f5 networks/terraform-F5AS3-AppDeploy"
+  source = "github.com/sebbycorp/terraform-F5AS3-AppDeploy"
   tenant            = "tf-as3-test"
   common_name       = "tf-as3-test.maniak.academy"
   as3tmpl           = "http"

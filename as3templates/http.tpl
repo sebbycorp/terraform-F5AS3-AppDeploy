@@ -5,8 +5,7 @@
    "declaration": {
       "class": "ADC",
       "schemaVersion": "3.0.0",
-      "id": "urn:uuid:${UUID}",
-      "label": "${TENANT}",
+      "id": "${DESCRIPTION}",
       "label": "${DESCRIPTION}",
       "remark": "${DESCRIPTION}",
       "${TENANT}": {
