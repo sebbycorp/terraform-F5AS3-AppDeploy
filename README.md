@@ -11,10 +11,10 @@ The following module provides an easy way to deploy F5 AS3 Configurations.
 
 ### Example
 
-```hcl
+```
 module "app1" {
-  source               = "sebbycorp/app/bigip"
-  version              = "1.0.0"
+  source  = "sebbycorp/AppDeploy/F5AS3"
+  version              = "1.0.2"
   tenant               = "tf-as3-test"
   as3tmpl              = "http"
   common_name          = "appname or fqdn"
